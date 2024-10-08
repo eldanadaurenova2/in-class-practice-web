@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract First Half of Even String</title>
+</head>
+<body>
+    <h1>Extract the First Half of an Even String</h1>
+    <p>Enter a string with an even length to extract the first half.</p>
+    <script>
+
+        function extractFirstHalf() {
+
+            const inputString = prompt("Enter a string with even length:");
+
+
+            if (inputString.length % 2 !== 0) {
+                console.log("The length of the string is not even. Please enter an even-length string.");
+                return;
+            }
+
+
+            const firstHalf = inputString.substring(0, inputString.length / 2);
+
+
+            console.log(`The first half of the string is: ${firstHalf}`);
+        }
+
+
+        extractFirstHalf();
+    </script>
+</body>
+</html>

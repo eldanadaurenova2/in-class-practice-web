@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Two Integers</title>
+</head>
+<body>
+    <h1>Compute the Sum of Two Integers</h1>
+    <p>Enter two integers to compute their sum. If the values are the same, the result will be triple their sum.</p>
+    <script>
+
+        function computeSum() {
+            // Get input from the user
+            const num1 = parseInt(prompt("Enter the first integer:"));
+            const num2 = parseInt(prompt("Enter the second integer:"));
+
+
+            if (isNaN(num1) || isNaN(num2)) {
+                console.log("Please enter valid integers.");
+                return;
+            }
+
+
+            let sum = num1 + num2;
+
+
+            if (num1 === num2) {
+                sum *= 3;
+            }
+
+
+            console.log(`The result is: ${sum}`);
+        }
+
+
+        computeSum();
+    </script>
+</body>
+</html>
